@@ -22,7 +22,7 @@ a{color:#4ade80}a:hover{color:#22d3ee}
 .lg{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#4ade80,#22d3ee);box-shadow:0 0 22px rgba(74,222,128,.55)}
 .bn{font:600 22px "Pixelify Sans",system-ui,sans-serif;letter-spacing:.02em}
 .hd nav{margin-left:auto;display:flex;gap:26px;align-items:center}
-.hd nav a{color:#8fa89b;text-decoration:none;font-weight:500}.hd nav a:hover{color:#e8f3ec}
+.hd nav a{color:#8fa89b;text-decoration:none;font-weight:500}.hd nav a:hover{color:#e8f3ec}.hd nav a.btn,.hd nav a.btn:hover{color:#03120a;font-weight:600}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:12px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.14);color:#e8f3ec;background:rgba(255,255,255,.05)}
 .btn:hover{background:rgba(74,222,128,.14);color:#e8f3ec}
 .pr{border:0;color:#03120a;background:linear-gradient(135deg,#4ade80,#22d3ee);box-shadow:0 8px 30px rgba(74,222,128,.35)}.pr:hover{color:#03120a;background:linear-gradient(135deg,#6ef0a0,#4fe3f5)}
@@ -60,8 +60,9 @@ h2{font:600 36px/1.15 Unbounded,system-ui,sans-serif;margin:0 0 14px;letter-spac
 .sc:before{content:counter(s);display:block;font:600 30px "Pixelify Sans",sans-serif;color:#4ade80;margin-bottom:6px}
 .sc p{margin:0;color:#a9c0b3;font-size:15px}.sc b{display:block;margin-bottom:4px}
 .cta{margin-top:44px;padding:44px;border-radius:20px;text-align:center;border:1px solid rgba(74,222,128,.3);background:linear-gradient(135deg,rgba(74,222,128,.12),rgba(34,211,238,.1))}
+.g2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.lk{display:block;text-decoration:none;color:inherit}.lk:hover{color:inherit}.lk .go{display:inline-block;margin-top:14px;color:#4ade80;font-weight:600}
 .ft{padding:36px 0 50px;border-top:1px solid rgba(255,255,255,.09);color:#8fa89b;font-size:14px;display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
-@media(max-width:900px){.hero,.gr,.th,.st{grid-template-columns:1fr}h1{font-size:36px}h2{font-size:28px}.hd nav a:not(.btn){display:none}}
+@media(max-width:900px){.hero,.g2,.gr,.th,.st{grid-template-columns:1fr}h1{font-size:36px}h2{font-size:28px}.hd nav a:not(.btn){display:none}}
 </style>
 
 </head>
@@ -72,7 +73,7 @@ h2{font:600 36px/1.15 Unbounded,system-ui,sans-serif;margin:0 0 14px;letter-spac
 <div class="bl" style="width:560px;height:560px;background:#22d3ee;right:-160px;top:520px"></div>
 <div class="w">
 <div class="hd"><div class="lg"></div><div class="bn">VoidLauncher</div>
-<nav><a href="#features">Возможности</a><a href="#themes">Темы</a><a href="#start">Как начать</a><a class="btn pr" href="https://github.com/pidorchain/VoidLauncher/releases">Скачать</a></nav></div>
+<nav><a href="#features">Возможности</a><a href="#themes">Темы</a><a href="#start">Как начать</a><a href="#community">Telegram</a><a class="btn pr" href="https://github.com/pidorchain/VoidLauncher/releases">Скачать</a></nav></div>
 
 <div class="hero"><div>
 <h1>Minecraft-лаунчер, который <em>всё делает сам</em></h1>
@@ -122,7 +123,15 @@ h2{font:600 36px/1.15 Unbounded,system-ui,sans-serif;margin:0 0 14px;letter-spac
 <div class="cta"><h2 style="margin-bottom:10px">Готовы играть?</h2><p class="sub" style="margin:0 auto 26px">Данные игры хранятся локально, в папке %APPDATA%\.visuals-launcher.</p><a class="btn pr" href="https://github.com/pidorchain/VoidLauncher/releases">Скачать VoidLauncher</a></div>
 </div>
 
-<div class="ft"><span>VoidLauncher — неофициальный лаунчер Minecraft Java Edition. Не связан с Mojang и Microsoft.</span><a href="https://github.com/pidorchain/VoidLauncher">GitHub</a></div>
+<div class="sec" id="community">
+<div class="eb">Сообщество</div><h2>Мы в Telegram</h2>
+<p class="sub">Канал проекта и бот VoidLauncher.</p>
+<div class="g2">
+<a class="cd lk" href="https://t.me/v0idlauncher" target="_blank" rel="noopener"><div class="ic">✈</div><h3>Канал VoidLauncher</h3><p>t.me/v0idlauncher</p><span class="go">Открыть в Telegram →</span></a>
+<a class="cd lk" href="https://t.me/voidlauncher_bot" target="_blank" rel="noopener"><div class="ic">◉</div><h3>Бот VoidLauncher</h3><p>@voidlauncher_bot</p><span class="go">Открыть бота →</span></a>
+</div></div>
+
+<div class="ft"><span>VoidLauncher — неофициальный лаунчер Minecraft Java Edition. Не связан с Mojang и Microsoft.</span><span><a href="https://github.com/pidorchain/VoidLauncher">GitHub</a> · <a href="https://t.me/v0idlauncher">Telegram</a> · <a href="https://t.me/voidlauncher_bot">@voidlauncher_bot</a></span></div>
 </div></div>
 
 </body>
